@@ -1,0 +1,21 @@
+public class overriding {
+    void m() {
+
+        System.out.println("this is from parent method");
+    }
+
+    public static void main(String[] args) {
+        b b = new b();
+        b.m();
+    }
+}
+
+class b extends overriding {
+
+    void m() {
+        System.out.println("this is from child method");
+
+    }
+
+
+}
