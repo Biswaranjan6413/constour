@@ -1,0 +1,28 @@
+// constructor with overloading
+public class constructor {
+
+     int a;
+    int b;
+    int c;
+
+    constructor(int a, int b,int c){
+        this.a=a;
+        this.b=b;
+        this.c=c;
+    }
+    constructor(int a, int b){
+        this.a=a;
+        this.b=b;
+    }
+
+    void m(){
+        System.out.println(a+" "+b+" "+c);
+    }
+
+    public static void main(String[] args) {
+        constructor cons = new constructor(1,2,3);
+        constructor cons1 = new constructor(1,2);
+        cons.m();
+        cons1.m();
+    }
+}
